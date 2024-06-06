@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="py-14 grid grid-cols-12 gap-x-5 gap-y-8">
                 <div className="col-span-full xl:col-span-3 relative bg-[#F7C35F] rounded-2xl gap-12 p-6 xl:w-72 h-96 flex flex-col justify-center items-center">
                     
-                    <a href="https://pagedone.io/" className="flex justify-center lg:justify-start">
+                    <a href="/" className="flex justify-center lg:justify-start">
                         <img src={Logog} alt=""  className='w-20'/>
                         
                     </a>
@@ -96,10 +96,10 @@ const Footer = () => {
                     <h4 className="text-lg text-gray-100 font-bold mb-9 text-center xl:text-left">Quick Links</h4>
                     <div className="flex gap-6 xl:gap-12 max-xl:justify-center">
                         <ul className="text-gray-200 transition-all duration-500 grid gap-6">
-                            <li><a href="javascript:;">Home</a></li>
-                            <li><a href="javascript:;">NFRAIE</a></li>
-                            <li><a href="javascript:;">Contact us</a></li>
-                            <li><a href="javascript:;">Forms</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/NFRAI">NFRAEI</a></li>
+                            <li><a href="Contact us">Contact us</a></li>
+                            <li><a href="Forms">Forms</a></li>
                         </ul>
                         {/* <ul className="text-gray-600 transition-all duration-500 grid gap-6">
                             <li><a href="javascript:;">Careers</a></li>

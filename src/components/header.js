@@ -44,11 +44,12 @@ export default function Header() {
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <img
-                    className="h-14 w-auto"
+                  <a href="/"><img
+                    className="h-10 w-auto"
                     src={logo}
                     alt="Your Company"
-                  />
+                  /></a>
+                  
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center">
