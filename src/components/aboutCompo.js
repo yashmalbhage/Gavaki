@@ -3,13 +3,15 @@ import bgImg from '../Assets/style (1).png';
 import tick from '../Assets/material-symbols_check-circle.png';
 import bottomImg from '../Assets/style.png'
 
-const AboutCompo = ({ leftImg, firstLine, tit1, tit2, desc, bg }) => {
+const AboutCompo = ({ leftImg,leftImgi, firstLine, tit1, tit2, desc, bg }) => {
   return (
     <div className='relative min-h-screen w-full overflow-hidden' >
       <img src={bgImg} alt="Background" className='h-60 '/>
       <div className="flex flex-col sm:flex-row p-4   -translate-y-48  justify-center items-center ">
         <div className="w-full sm:w-1/2 flex justify-center ">
         <img src={bottomImg} alt="bottom" className='sm:h-40'/>
+        <img src={leftImgi}  className='w-full sm:h-full sm:float-right'/>
+
 
           <img src={leftImg} alt='Left' className='w-96 sm:h-3/5 sm:float-right'/>
 

@@ -1,7 +1,9 @@
 import React from 'react'
 import Logog from '../Assets/GAVAKI PNG-01.png'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+    const {t} = useTranslation()
   return (
     <div>
         <footer className="w-full">
@@ -13,10 +15,10 @@ const Footer = () => {
                         <img src={Logog} alt=""  className='w-20'/>
                         
                     </a>
-                    <p className="text-center text-white">Stay updated with our latest news, events, and initiatives by following us on our social media channels.</p>
+                    <p className="text-center text-white">{t('stay_updated')}</p>
                    
                     <div className="flex  space-x-4 sm:justify-center  ">
-                        <a href="javascript:;"
+                        <a href="https://x.com/Gavaki24?t=CX3XGu9ANmWqEpBbH76l9Q&s=09"
                             className="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
                                 fill="none">
@@ -29,7 +31,7 @@ const Footer = () => {
 
 
                         </a>
-                        <a href="javascript:;"
+                        <a href="https://www.instagram.com/gavakifoundation?igsh=MTNjOW82a2NuemQ3bw=="
                             className="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
                             <svg className="w-[1.25rem] h-[1.125rem]" viewBox="0 0 15 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -46,60 +48,31 @@ const Footer = () => {
                             </svg>
 
                         </a>
-                        <a href="javascript:;"
+                       
+                        <a href="https://www.facebook.com/profile.php?id=61560407831672&mibextid=ZbWKwL"
                             className="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
 
-                            <svg className="w-[1rem] h-[1rem]" viewBox="0 0 13 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M3.3794 11.4355V3.75116H0.818893V11.4355H3.37967H3.3794ZM2.09968 2.70218C2.9924 2.70218 3.54817 2.11211 3.54817 1.37469C3.53146 0.620473 2.9924 0.046875 2.11666 0.046875C1.24032 0.046875 0.667969 0.620473 0.667969 1.37463C0.667969 2.11204 1.22354 2.70211 2.0829 2.70211H2.09948L2.09968 2.70218ZM4.79668 11.4355H7.35698V7.14468C7.35698 6.91532 7.37369 6.68536 7.44134 6.52154C7.62635 6.06249 8.04764 5.5873 8.75514 5.5873C9.68141 5.5873 10.0522 6.29192 10.0522 7.32503V11.4355H12.6124V7.02953C12.6124 4.66933 11.3494 3.57101 9.66483 3.57101C8.28372 3.57101 7.67715 4.34103 7.34014 4.86549H7.35718V3.75143H4.79681C4.83023 4.47231 4.79661 11.4358 4.79661 11.4358L4.79668 11.4355Z"
-                                    fill="url(#paint0_linear_9147_19261)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_9147_19261" x1="12.6124" y1="0.699364"
-                                        x2="0.926912" y2="11.4629" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#7C3AED" />
-                                        <stop offset="0.993738" stop-color="#4F46E5" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-
-                        </a>
-                        <a href="javascript:;"
-                            className="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
-
-                            <svg className="w-[1.25rem] h-[0.875rem]" viewBox="0 0 16 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4346 1.0181C14.0684 1.18926 14.5665 1.68869 14.7349 2.32177C15.0413 3.47069 15.0413 5.86935 15.0413 5.86935C15.0413 5.86935 15.0413 8.26801 14.7349 9.41693C14.5642 10.0524 14.0661 10.5518 13.4346 10.7206C12.2886 11.0278 7.69058 11.0278 7.69058 11.0278C7.69058 11.0278 3.09491 11.0278 1.94657 10.7206C1.31277 10.5494 0.814613 10.05 0.646222 9.41693C0.339844 8.26801 0.339844 5.86935 0.339844 5.86935C0.339844 5.86935 0.339844 3.47069 0.646222 2.32177C0.816952 1.68635 1.31511 1.18692 1.94657 1.0181C3.09491 0.710938 7.69058 0.710938 7.69058 0.710938C7.69058 0.710938 12.2886 0.710938 13.4346 1.0181ZM10.041 5.86935L6.22178 8.08043V3.65827L10.041 5.86935Z"
-                                    fill="url(#paint0_linear_9147_18425)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_9147_18425" x1="15.0413" y1="1.30201" x2="4.68186"
-                                        y2="14.2671" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#7C3AED" />
-                                        <stop offset="0.993738" stop-color="#4F46E5" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                           <img src="https://img.icons8.com/?size=100&id=118487&format=png&color=7C3AED" alt="" />
 
                         </a>
                     </div>
                 </div>
 
                 <div className="block text-center xl:text-left xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3 xl:pl-5">
-                    <h4 className="text-lg text-white font-bold mb-9">Get In Touch</h4>
+                    <h4 className="text-lg text-white font-bold mb-9">{t('get_in_touch')}</h4>
                     <ul className="text-gray-100 transition-all duration-500 grid gap-6">
-                        <li>Reach out to us at info@gavaki.org for more information</li>
+                        <li>{t('contact_info')}</li>
                       
                     </ul>
                 </div>
                 <div className="block xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3">
-                    <h4 className="text-lg text-gray-100 font-bold mb-9 text-center xl:text-left">Quick Links</h4>
+                    <h4 className="text-lg text-gray-100 font-bold mb-9 text-center xl:text-left">{t('quick_links')}</h4>
                     <div className="flex gap-6 xl:gap-12 max-xl:justify-center">
                         <ul className="text-gray-200 transition-all duration-500 grid gap-6">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/NFRAI">NFRAEI</a></li>
-                            <li><a href="Contact us">Contact us</a></li>
-                            <li><a href="Forms">Forms</a></li>
+                            <li><a href="/">{t('home')}</a></li>
+                            <li><a href="/NFRAI">{t('nfraei')}</a></li>
+                            <li><a href="Contact us">{t('contact_us')}</a></li>
+                            <li><a href="Forms">{t('forms')}</a></li>
                         </ul>
                         {/* <ul className="text-gray-600 transition-all duration-500 grid gap-6">
                             <li><a href="javascript:;">Careers</a></li>
@@ -110,13 +83,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="block xl:py-16 col-span-full md:col-span-4 xl:col-span-3">
-                    <h4 className="text-lg text-gray-100 font-bold mb-9 text-center xl:text-left">Newsletter</h4>
+                    <h4 className="text-lg text-gray-100 font-bold mb-9 text-center xl:text-left">{t('newsletter')}</h4>
                     <div className="grid gap-7 ">
-                        <input type="text" name="email"
+                        <input type="text" name={t('enter_email')}
                             className="py-2 px-4 border border-gray-300 shadow-sm h-14 text-lg text-gray-800 rounded-full w-full  xl:w-64 placeholder:text-gray-400 focus:outline-none"
                             placeholder="Enter email.." />
                         <button type="submit"
-                            className="flex gap-2 justify-center items-center py-3.5 px-7 rounded-full text-white bg-[#F7C35F] shadow-md w-fit transition-all duration-500 mx-auto xl:mx-0 hover:bg-indigo-700">Subscribe<svg
+                            className="flex gap-2 justify-center items-center py-3.5 px-7 rounded-full text-white bg-[#F7C35F] shadow-md w-fit transition-all duration-500 mx-auto xl:mx-0 hover:bg-indigo-700">{t('subscribe')}<svg
                                 width="17" height="13" viewBox="0 0 17 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path

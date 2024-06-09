@@ -1,73 +1,71 @@
-import React from 'react'
-import Hero from '../components/Hero'
-import heroImg from "../Assets/dan-meyers-IQVFVH0ajag-unsplash.jpg"
+import React from 'react';
+import Hero from '../components/Hero';
+import heroImg from "../Assets/dan-meyers-IQVFVH0ajag-unsplash.jpg";
+import { Button } from '../components/Button';
+import { useTranslation } from 'react-i18next';
+const Forms = () => {
+  const { t } = useTranslation();
 
- const Forms = () => {
   return (
     <div className='mb-10'>
-      <Hero backgroundImage={heroImg} firstLine="Forms" tit1="Join Us in Empowering Rural Agriculture" desc="To become a part of the National Federation of Rural Agricultural Economic Institutions (NFRAEI), we invite Farmer Producer Companies (FPCs) and Farmer Producer Organizations (FPOs) to complete the necessary application forms and submit them for review."/>
-    
+      <Hero 
+        backgroundImage={heroImg} 
+        firstLine={t("nfraie_forms_hero_firstLine")} 
+        tit1={t("nfraie_forms_hero_tit1")} 
+        desc={t("nfraie_forms_hero_desc")} 
+      />
+
       <div>
         <div className="flex pt-10">
           <div className='p-4'>
-            <p className='font-thin text-white'>Application Form for FPC/FPO Membership</p>
-            <h4 className='font-bold  text-white' >
-            To apply for membership, please download the form and send the completed form to :<br></br>
-            Email: forms@gavaki.org  <br></br>
-            Mail*: D-102, Regency Park, Chakki Naka, Kalyan E - 421306, Maharashtra, India
+            <p className='font-thin text-white'>{t("nfraie_forms_fpc_fpo_title")}</p>
+            <h4 className='font-bold text-white'>
+              {t("nfraie_forms_fpc_fpo_desc")}<br/>
+              {t("nfraie_forms_fpc_fpo_email")}<br/>
+              {t("nfraie_forms_fpc_fpo_mail")}
             </h4>
-
           </div>
-          <div className="text-center flex justify-center items-center p-4 w-1/2">
-                            <button type="submit" className="w-full bg-[#F7C35F] text-grey-700 px-6 py-3 font-xl rounded-md sm:mb-0 w-64">Click to downlaod</button>
-                        </div>
+          <Button url="https://drive.google.com/file/d/1A7qFnvZGifkPeG8o9q9hBQbPgu7HDtIH/view?usp=sharing" pdfName="PACs-Application-form" />
         </div>
+
         <div className="flex pt-10">
           <div className='p-4'>
-            <p className='font-thin text-white'>Application Form for FIG Membership</p>
-            <h4 className='font-bold  text-white' >
-            To apply for membership, please download the form and send the completed form to :<br></br>
-            Email: forms@gavaki.org  <br></br>
-            Mail*: D-102, Regency Park, Chakki Naka, Kalyan E - 421306, Maharashtra, India
+            <p className='font-thin text-white'>{t("nfraie_forms_fig_title")}</p>
+            <h4 className='font-bold text-white'>
+              {t("nfraie_forms_fig_desc")}<br/>
+              {t("nfraie_forms_fig_email")}<br/>
+              {t("nfraie_forms_fig_mail")}
             </h4>
-
           </div>
-          <div className="text-center flex justify-center items-center p-4 w-1/2">
-                            <button type="submit" className="w-full bg-[#F7C35F] text-grey-700 px-6 py-3 font-xl rounded-md sm:mb-0 w-64">Click to downlaod</button>
-                        </div>
+          <Button url="https://drive.google.com/file/d/1pJtpJm3vnCOknVTgv7oOXJSdFbjhvGux/view?usp=sharing" pdfName="FIGs-Application-form" />
         </div>
+
         <div className="flex pt-10">
           <div className='p-4'>
-            <p className='font-thin text-white'>Application Form for SHG Membership</p>
-            <h4 className='font-bold  text-white' >
-            To apply for membership, please download the form and send the completed form to :<br></br>
-            Email: forms@gavaki.org  <br></br>
-            Mail*: D-102, Regency Park, Chakki Naka, Kalyan E - 421306, Maharashtra, India
+            <p className='font-thin text-white'>{t("nfraie_forms_shg_title")}</p>
+            <h4 className='font-bold text-white'>
+              {t("nfraie_forms_shg_desc")}<br/>
+              {t("nfraie_forms_shg_email")}<br/>
+              {t("nfraie_forms_shg_mail")}
             </h4>
-
           </div>
-          <div className="text-center flex justify-center items-center p-4 w-1/2">
-                            <button type="submit" className="w-full bg-[#F7C35F] text-grey-700 px-6 py-3 font-xl rounded-md sm:mb-0 w-64">Click to downlaod</button>
-                        </div>
+          <Button url="https://drive.google.com/file/d/1usPh85VCzf2dan6g7Fe5_FbnNJd96HEd/view?usp=sharing" pdfName="SHGs-Application-form" />
         </div>
+
         <div className="flex pt-10">
           <div className='p-4'>
-            <p className='font-thin text-white'>Application Form for PACS Membership</p>
-            <h4 className='font-bold  text-white' >
-            To apply for membership, please download the form and send the completed form to :<br></br>
-            Email: forms@gavaki.org  <br></br>
-            Mail*: D-102, Regency Park, Chakki Naka, Kalyan E - 421306, Maharashtra, India
+            <p className='font-thin text-white'>{t("nfraie_forms_pacs_title")}</p>
+            <h4 className='font-bold text-white'>
+              {t("nfraie_forms_pacs_desc")}<br/>
+              {t("nfraie_forms_pacs_email")}<br/>
+              {t("nfraie_forms_pacs_mail")}
             </h4>
-
           </div>
-          <div className="text-center flex justify-center items-center p-4 w-1/2">
-                            <button type="submit" className="w-full bg-[#F7C35F] text-grey-700 px-6 py-3 font-xl rounded-md sm:mb-0 w-64">Click to downlaod</button>
-                        </div>
+          <Button url="https://drive.google.com/file/d/1A7qFnvZGifkPeG8o9q9hBQbPgu7HDtIH/view?usp=sharing" pdfName="PACs-Application-form" />
         </div>
       </div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Forms
+export default Forms;

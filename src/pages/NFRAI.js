@@ -2,8 +2,10 @@ import React from 'react'
 import Hero from '../components/Hero'
 import heroImg from '../Assets/benjamin-davies-Zm2n2O7Fph4-unsplash.jpg'
 import AboutCompo from '../components/aboutCompo'
-import abtimg from "../Assets/alka-jha-5xwBeArXd1E-unsplash.jpg"
+import abtimg from "../Assets/NFRAEI AI-01.png"
 import Working from '../components/Working'
+import { useTranslation } from 'react-i18next';
+
 import icon1 from "../Assets/Class.png"
 
 import icon2 from '../Assets/Farm 2.png'
@@ -11,59 +13,63 @@ import icon3 from '../Assets/Sow.png'
 import icon4 from '../Assets/Tree Planting.png'
 import icon5 from '../Assets/Organic Food.png'
 import icon6 from '../Assets/Knowledge Transfer.png'
-const cardsdata = [
-  {icon:icon1,
-  title:"Training & Capacity Building",
-  points:[
-      "We offer extensive training programs to improve skills in modern agricultural practices, business management, and financial literacy",
-     
-  ]
-  },
-  {icon:icon2,
-  title:"Market Access & Support",
-  points:[
-      "Our marketing strategies help farmers access larger markets and negotiate better prices for their products.",
-      
-  ]
-  },
-  {icon:icon3,
-      title:"Compliance Assistance",
-      points:[
-          "We provide guidance on regulatory and legal requirements to ensure that all our members operate within the law.",
-        
-      ]
-  },
-  {icon:icon4,
-      title:"Resource Mobilization",
-      points:[
-          "We assist in securing financial resources, grants, and investments, and promote financial literacy among our members",
-          
-      ]
-  },
-  {icon:icon5,
-      title:"Policy Advocacy",
-      points:[
-          "Engaging with policymakers, we advocate for farmer-friendly policies and fair trade regulations.",
-         
-      ]
-  },
-  {icon:icon6,
-      title:"Knowledge Sharing",
-      points:[
-          "We facilitate the exchange of best practices and information to foster continuous improvement and collective learning among our members.",
-          
-      ]
-  }
-          
 
-]
 
  const NFRAI = () => {
+    const { t } = useTranslation();
+    const cardsdata = [
+        {icon:icon1,
+        title:t('nfraie_working_card1_title'),
+        points:[
+            t('nfraie_working_card1_point1'),
+           
+        ]
+        },
+        {icon:icon2,
+            title:t('nfraie_working_card2_title'),
+            points:[
+                t('nfraie_working_card2_point1'),
+               
+            ]
+            },
+            {icon:icon3,
+                title:t('nfraie_working_card3_title'),
+                points:[
+                    t('nfraie_working_card3_point1'),
+                   
+                ]
+
+                },
+                {icon:icon4,
+                    title:t('nfraie_working_card4_title'),
+                    points:[
+                        t('nfraie_working_card4_point1'),
+                       
+                    ]
+                    },
+                    {icon:icon5,
+                        title:t('nfraie_working_card5_title'),
+                        points:[
+                            t('nfraie_working_card5_point1'),
+                           
+                        ]
+                        },
+                        {icon:icon6,
+                            title:t('nfraie_working_card6_title'),
+                            points:[
+                                t('nfraie_working_card6_point1'),
+                               
+                            ]
+                            },
+       
+                
+      
+      ]
   return (
     <div>
-      <Hero backgroundImage={heroImg} firstLine=" National Federation of Rural Agricultural Economic Institutions (NFRAEI)" tit1="Strengthening Rural Agriculture" tit2="through Unity and Innovation" desc="he National Federation of Rural Agricultural Economic Institutions (NFRAEI) is a pivotal arm of the Gavaki Foundation, dedicated to supporting and empowering Farmer Producer Companies (FPCs), Farmer Producer Organizations (FPOs), Primary Agricultural Credit Societies (PACS), Farmer Interest Groups (FIGs), and Self-Help Groups (SHGs). Our federation operates across multiple states, including Maharashtra, Goa, Andhra Pradesh, Telangana, Gujarat, and Tamil Nadu, aiming to unify and uplift the agricultural community.
-"/>
-<AboutCompo leftImg={abtimg} desc={["Social Mobilization & Capacity Building", "Financial Inclusion", "Livelihood Promotion", "Convergence"]} firstLine="Our vision and mission" tit1="To create a sustainable and prosperous agricultural sector through collective action, innovation, and empowerment." tit2="Mission" />
+      <Hero backgroundImage={heroImg} firstLine={t('nfraie_hero_firstLine')} tit1={t('nfraie_hero_tit1')} tit2={t('nfraie_hero_tit2')} desc={t('nfraie_hero_desc')}
+/>
+<AboutCompo leftImgi={abtimg} desc={[t('nfraie_aboutCompo_desc1'), t('nfraie_aboutCompo_desc2'), t('nfraie_aboutCompo_desc3'), t('nfraie_aboutCompo_desc4')]} firstLine={t('Our vision and mission')} tit1={t('nfraie_aboutCompo_firstLine')} tit2={t('nfraie_aboutCompo_tit1')} />
 <Working tit1=" " tit2="Key Activities"  cardData={cardsdata}/>
     </div>
   )
