@@ -3,6 +3,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import Home from './pages/Home';
+import { Analytics } from "@vercel/analytics/react"
 import  Forms  from './pages/Forms';
 import Contact from './pages/contact';
 import  NFRAI  from './pages/NFRAI';
